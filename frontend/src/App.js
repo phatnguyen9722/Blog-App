@@ -1,37 +1,61 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
+  Outlet,
 } from "react-router-dom";
 
+import Home from "./pages/Home"
 import Login from "./pages/Login"
+import Single from './pages/Single'
+import Write from "./pages/Write"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar";
+
+const Layout = () => {
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  )
+}
+
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <div>
-          <Navbar/>
-          <h1>Home page</h1>
-          <Link to="about">About Us</Link>
-          <Footer/>
-        </div>
-      ),
+      element: <Layout />,
+      children: [
+        {
+          path: "/home",
+          element: <Home />
+        },
+        {
+          path: "/write",
+          element: <Write />
+        },
+        {
+          path: "/post/:id",
+          element: <Single />
+        },
+      ]
     },
     {
       path: "/login",
-      element: <Login/>,
+      element: <Login />,
     },
   ]);
 
   return (
-    <div className="App">
-      <RouterProvider router={router} />
+    <div className="app">
+      <div className="container">
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }
+
+
 
 export default App;
