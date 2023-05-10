@@ -1,0 +1,42 @@
+.navbar {
+    .container {
+        padding: 10px 0px;
+        @include flex(center, space-between, none);
+
+        .logo {
+            img {
+                width: 120px;
+            }
+        }
+
+        .links {
+            @include flex(center, none, none);
+            gap: 10px;
+
+            .link {
+                text-decoration: none;
+                color: inherit;
+                h6 {
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+
+            span {
+                cursor: pointer;
+            }
+
+            .write {
+                background-color: $light-green;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                @include flex(center, center, none);
+
+                &:hover {
+                    font-weight: 550;
+                }
+            }
+        }
+    }
+}

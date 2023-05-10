@@ -3,3 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.app {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 1024px;
+}
