@@ -1,28 +1,28 @@
-.auth{
-    @include flex (center, center, column);
+.auth {
+    @include flex(center, center, column);
     height: 100vh;
     background-color: $light-green;
 
-    h1{
+    h1 {
         font-size: 20px;
         color: teal;
         margin-bottom: 20px;
     }
 
-    form{
+    form {
         @include flex(none, none, column);
         padding: 10px;
         background-color: #ffffff;
         width: 200px;
         gap: 20px;
 
-        input{
+        input {
             padding: 10px;
             border: none;
             border-bottom: 1px solid gray;
         }
 
-        button{
+        button {
             padding: 10px;
             border: none;
             background-color: teal;
@@ -30,12 +30,12 @@
             cursor: pointer;
         }
 
-        p{
+        p {
             font-size: 12px;
             text-align: center;
             color: red;
         }
-        span{
+        span {
             font-size: 12px;
             @include flex(center, center, column);
         }

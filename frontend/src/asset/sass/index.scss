@@ -1,14 +1,10 @@
 @import './mixins';
 @import './variables';
 
+@import './components/Navbar';
 @import './components/Login';
 
-
-.app{
-    .container{
-
-        //Login & Register
-        
-
+.app {
+    .container {
     }
 }

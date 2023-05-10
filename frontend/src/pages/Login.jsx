@@ -1,21 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 function Login() {
-  return (
-    <div className='auth'>
-      <h1>Login</h1>
-      <form action="">
-        <input required type="text" placeholder='username'/>
-        <input required type="email" placeholder='email'/>
-        <input required type="password" placeholder='password' />
-        <button>Login</button>
-        <p>This is an error!</p>
-        <span>Don't have an account? 
-          <Link to="/register">Register</Link>
-        </span>
-      </form>
-    </div>
-  )
+    return (
+        <div className="auth">
+            <h1>Login</h1>
+            <form action="">
+                <input required type="text" placeholder="username" />
+                <input required type="email" placeholder="email" />
+                <input required type="password" placeholder="password" />
+                <button>Login</button>
+                <p>This is an error!</p>
+                <span>
+                    Don't have an account?
+                    <Link to="/register">Register</Link>
+                </span>
+            </form>
+        </div>
+    );
 }
 
-export default Login
+export default Login;
