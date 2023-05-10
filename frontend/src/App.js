@@ -6,6 +6,7 @@ import {
 
 import Home from "./pages/Home"
 import Login from "./pages/Login"
+import Register from "./pages/Register"
 import Single from './pages/Single'
 import Write from "./pages/Write"
 import Footer from "./components/Footer"
@@ -44,6 +45,10 @@ function App() {
     {
       path: "/login",
       element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register/>
     },
   ]);
 
