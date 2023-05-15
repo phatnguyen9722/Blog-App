@@ -1,0 +1,26 @@
+.home {
+
+    .posts {
+        margin-top: 50px;
+        @include flex (none, none, column);
+        gap: 150px;
+
+        .post {
+            @include flex (none, none, none);
+            gap: 100px;
+        }
+
+        .img {
+            flex: 1;
+
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content {
+            flex: 2;
+        }
+    }
+}
