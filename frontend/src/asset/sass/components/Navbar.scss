@@ -16,6 +16,7 @@
             .link {
                 text-decoration: none;
                 color: inherit;
+
                 h6 {
                     font-size: 16px;
                     font-weight: 300;
@@ -35,6 +36,8 @@
 
                 &:hover {
                     font-weight: 550;
+                    background-color: #ffffff;
+                    border: 1px solid $light-green;
                 }
             }
         }
