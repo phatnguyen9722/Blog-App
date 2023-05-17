@@ -1,0 +1,12 @@
+.single {
+    @include flex(none, none, row);
+    gap: 50px;
+
+    .content {
+        flex: 5;
+    }
+
+    .menu {
+        flex: 2;
+    }
+}
